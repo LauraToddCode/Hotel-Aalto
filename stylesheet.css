@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav&display=swap');
+
+html {
+  background-color:rgb(255, 255, 255);
+}
+
+body {
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotelAaltoDesktop {
+  margin: 1em 0;
+  width: 600px;
+}
+
+.hotelAaltoMobile {
+  display: none;
+}
+
+.nav {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 1rem;
+  color: rgb black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  width: 600px;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0px;
+  line-height: 2px;
+}
+
+nav li {
+  margin: 0px 2rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+.boundary {
+  width: 1000px;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*HOME*/
+
+.indexBoundary {
+  height: calc(100vh - 350px);
+}
+
+.myDesktopSlides {
+  display: flex;
+  justify-content: center;
+}
+
+.myMobileSlides {
+  display: none;
+}
+
+.Slide1, .Slide2, .Slide3 {
+  height: calc(100vh - 350px);
+  position: absolute;
+  margin-top: auto;
+}
+
+
+.Slide1 {
+  animation: fade1 20s infinite;
+  -webkit-animation: fade1 20s infinite;
+}
+
+.Slide2 {
+  animation: fade2 20s infinite;
+  -webkit-animation: fade2 20s infinite;
+}
+
+.Slide3 {
+  animation: fade3 20s infinite;
+  -webkit-animation: fade3 20s infinite;
+}
+
+@keyframes fade1 { 
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+
+@keyframes fade2 { 
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0}
+  100% { opacity: 0}
+}
+
+@keyframes fade3 { 
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+
+/*ABOUT*/
+
+.areaHeaders {
+  font-size: 1.5rem;
+  float: left;
+}
+
+.areaDescription {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.aboutMobile {
+  display: none;
+}
+
+.aboutImgDesktop {
+  display: block;
+}
+
+.aboutImgIpad {
+  display: none;
+}
+
+/*ROOM TYPES*/
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+#twin {
+  display: inline-flex;
+  align-items: center;
+  Margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#double {
+  display: inline-flex;
+  align-items: center;
+  Margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#suite {
+  display: inline-flex;
+  align-items: center;
+  Margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.roomImgIpad {
+  display: none;
+}
+
+.roomTypesMobile {
+  display: none;
+}
+
+
+/*CONTACT*/
+
+.contactPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactDesktop {
+  height: calc(100vh - 350px);
+  display: flex;
+}
+
+.map {
+  margin-left: 50px;
+}
+
+.contact {
+  float: right;
+  width: 40%;
+  margin-left: 100px;
+  text-justify: left;
+  vertical-align: middle;
+}
+
+.contactMobile {
+  display: none;
+}
+
+/*SOCIAL*/
+
+#social {
+  display:flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+  
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+
+  /*NAV*/
+
+  .hotelAalto {
+    width: 100%;
+  }
+
+  .boundary {
+    width: 100%;
+  }
+
+  /*HOME*/
+
+  .myDesktopSlides img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  /*ABOUT*/
+
+  .aboutDesktop{
+    width: 100%;
+  }
+
+  .aboutImgDesktop {
+    display: none;
+  }
+
+  .aboutImgIpad {
+    display: block;
+  }
+
+  /*ROOMS*/
+
+  .roomImgDesktop {
+    display: none;
+  }
+
+  .roomImgIpad {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  /*NAV*/
+
+  .hotelAaltoDesktop {
+    display: none;
+  }
+
+  .hotelAaltoMobile {
+    display: block;
+    margin: 0.75em 0;
+    max-width: 90%
+  }
+    
+          
+  .nav {
+    width: 100%;
+  }
+  
+  nav li {
+    margin: 0px 1rem;
+  }
+
+  .boundary {
+    width: 95%;
+  }
+  
+
+  /*HOME*/
+  
+  .indexBoundary {
+    height: auto;
+  }
+
+  .myMobileSlides {
+    display: flex;
+    justify-content: center;
+    height :533px;
+  }
+
+  .Slide1, .Slide2, .Slide3 {
+    height: 533px;
+    position: absolute;
+  }
+
+  .myDesktopSlides {
+    display: none;
+  }  
+
+  /*ABOUT*/ 
+
+  .aboutDesktop {
+    display: none;
+  }
+
+  .aboutMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutMobileImage {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    width: 288px;
+  }
+
+  
+  /*ROOM TYPES*/ 
+
+  .roomTypesDesktop {
+    display: none;
+  }
+
+  .roomTypesMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .roomTypesMobileImage {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    width: 288px;
+  }
+
+
+  /*CONTACT*/ 
+
+  .contactDesktop {
+    display:none;
+  }
+
+  .contactMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map {
+    margin: 0px;
+  }
+
+}
